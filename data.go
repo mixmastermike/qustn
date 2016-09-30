@@ -32,5 +32,9 @@ func init() {
 }
 
 func getQuestion() string {
+	if data == nil {
+		return ""
+	}
+
 	return data.Questions[rand.Intn(len(data.Questions))]
 }
