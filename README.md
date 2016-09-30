@@ -1,0 +1,2 @@
+# qustn
+Generate random questions
