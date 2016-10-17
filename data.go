@@ -36,5 +36,9 @@ func getQuestion() string {
 		return ""
 	}
 
+	// Add another one of these because of some weirdnesss with the app's state
+	// after Heroku puts this to sleep ..
+	rand.NewSource(time.Now().UnixNano())
+
 	return data.Questions[rand.Intn(len(data.Questions))]
 }
